@@ -36,7 +36,16 @@ class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:Text("dicerolerapp")),
+      appBar: AppBar(title:Text("dicerolerapp"),
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.settings,
+              color: Colors.white,
+      ),
+            ),
+        ],
+      ),
       body: Center(
           child:Text("Home page",textScaleFactor: 2,)
       ),
